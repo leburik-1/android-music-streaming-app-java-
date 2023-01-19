@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_c"
+    app:startDestination="@id/landing">
+
+    <fragment
+        android:id="@+id/landing"
+        android:name="com.example.nusaht.landing"
+        android:label="fragment_landing"
+        tools:layout="@layout/fragment_landing" >
+        <action
+            android:id="@+id/action_landing_to_login"
+            app:destination="@id/login" />
+        <action
+            android:id="@+id/action_landing_to_signup"
+            app:destination="@id/signup" />
+        <action
+            android:id="@+id/action_landing_to_landAct"
+            app:destination="@id/landAct" />
+    </fragment>
+    <fragment
+        android:id="@+id/login"
+        android:name="com.example.nusaht.account.login"
+        android:label="fragment_login"
+        tools:layout="@layout/fragment_login" >
+        <action
+            android:id="@+id/action_login_to_landing"
+            app:destination="@id/landing" />
+        <action
+            android:id="@+id/action_login_to_landAct"
+            app:destination="@id/landAct" />
+    </fragment>
+    <fragment
+        android:id="@+id/signup"
+        android:name="com.example.nusaht.account.signup"
+        android:label="fragment_signup"
+        tools:layout="@layout/fragment_signup" >
+        <action
+            android:id="@+id/action_signup_to_login"
+            app:destination="@id/login" />
+        <action
+            android:id="@+id/action_signup_to_landing"
+            app:destination="@id/landing" />
+    </fragment>
+    <activity
+        android:id="@+id/landAct"
+        android:name="com.example.nusaht.pages.LandAct"
+        android:label="act_land"
+        tools:layout="@layout/act_land" />
+</navigation>

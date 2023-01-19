@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_photos"
+            android:icon="@drawable/ic_baseline_camera_alt_24"
+            android:title="photos"/>
+        <item
+            android:id="@+id/nav_photo"
+            android:icon="@drawable/ic_baseline_browse_gallery_24"
+            android:title="photos"/>
+        <item
+            android:id="@+id/nav_phot"
+            android:icon="@drawable/ic_baseline_slideshow_24"
+            android:title="photos"/>
+    </group>
+</menu>
+
+
+
+

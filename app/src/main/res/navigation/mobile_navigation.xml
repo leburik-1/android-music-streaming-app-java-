@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation">
+
+    <fragment
+        android:id="@+id/nushahVR"
+        android:name="com.example.nusaht.pages.NushahVR"
+        android:label="fragment_nushah_v_r"
+        tools:layout="@layout/fragment_nushah_v_r" >
+    </fragment>
+    <fragment
+        android:id="@+id/search"
+        android:name="com.example.nusaht.pages.Search"
+        android:label="fragment_search"
+        tools:layout="@layout/fragment_search" >
+    </fragment>
+    <fragment
+        android:id="@+id/library"
+        android:name="com.example.nusaht.pages.Library"
+        android:label="fragment_library"
+        tools:layout="@layout/fragment_library" >
+
+    </fragment>
+    <fragment
+        android:id="@+id/home2"
+        android:name="com.example.nusaht.pages.Home"
+        android:label="fragment_home2"
+        tools:layout="@layout/fragment_home2" >
+    </fragment>
+</navigation>
